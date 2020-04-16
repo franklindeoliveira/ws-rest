@@ -1,5 +1,5 @@
-# jersey-restful-server
-RESTful Web Service Server com Jersey.
+# ws-soap
+Webservice SOAP - Serviço de carrinho de compras
 
 Exemplos de operações:
 
