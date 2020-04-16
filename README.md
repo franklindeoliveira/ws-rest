@@ -1,5 +1,5 @@
-# ws-soap
-Webservice SOAP - Serviço de carrinho de compras
+# ws-rest
+Webservice REST - Serviço de carrinho de compras
 
 Exemplos de operações:
 
