@@ -1,20 +1,20 @@
 # ws-rest
-Webservice REST - Serviço de carrinho de compras
+Webservice REST - Serviço de gerenciamento de livros
 
 Exemplos de operações:
 
 ``` terminal
-curl -X GET -H "Accept: application/json" http://localhost:8080/jersey-restful-server/modelos
+curl -X GET -H "Accept: application/xml" http://localhost:8080/livros/1
 ```
 
 ``` terminal
-curl -X POST -H "Content-type: application/json" -H "Accept: application/json" -d '[{"id": "5", "atributo": "Atributo 5"}]' http://localhost:8080/jersey-restful-server/modelos
+curl -X POST -H "Content-type: application/xml" -H "Accept: application/xml" -d "<livro><titulo>Novo livro</titulo><assunto>Novo livro</assunto><autor>Novo livro</autor></livro>" http://localhost:8080/livros
 ```
 
 ``` terminal
-curl -X PUT -H "Content-type: application/json" -H "Accept: application/json" -d '{"id": "1", "atributo": "Atributo 1000"}' http://localhost:8080/jersey-restful-server/modelos/1
+curl -X PUT -H "Content-type: application/xml" -H "Accept: application/xml" -d "<livro><titulo>Titulo atualizado</titulo><assunto>Assunto atualizado</assunto><autor>Autor atualizado</autor></livro>" http://localhost:8080/livros/1
 ```
 
 ``` terminal
-curl -X DELETE http://localhost:8080/jersey-restful-server/modelos
+curl -X DELETE http://localhost:8080/livros/1
 ```
